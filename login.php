@@ -70,13 +70,16 @@ $resulta=mysqli_query($conn,$query);
               
                <td><?php echo $rows['name_prdouit']; ?></td>
            
-               <td><?php echo '<img src="data:pict/;base64, '.base64_encode($rows['image_produit']).'" >'; ?></td>
+               <td><?php echo '<img src="./pict/.jpg;base64, '.base64_encode($rows['image_prdouit']).'" >'; ?></td>
+   
                <td><?php echo $rows['prix_produit']; ?></td>
            </tr>
          
       <?php
          }
       ?>
+
+
 
 </table>  
 </form>

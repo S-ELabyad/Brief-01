@@ -3,7 +3,7 @@ include_once ('controllers/config.php');
 
 class Contact extends DB
 {
-    public function contact_Message  ($id,$nom,$prenom,$email,$tele,$name_rep)
+    public function contact_message  ($id,$nom ,$prenom,$email,$tele,$name_rep)
     {
         $sql = "INSERT INTO `patient` (id, nom, prenom,email,tele,name_rep) VALUES ('$id','$nom','$prenom','$email' , '$tele' ,'$name_rep')";
 
@@ -31,9 +31,26 @@ class Contact extends DB
         if (empty($tele)) {
             $error['tele'] = "tele required";
         }
+        if (empty($name_rep)) {
+            $error['name_rep'] = "name_rep required";
+        }
         
 
         return $error;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 ?>

@@ -6,11 +6,12 @@ include_once ('classes/conect_class.php');
 $contact = new Contact();
 
 $error  = array();
-
+$id='';
 $nom = '';
 $prenom = '';
 $email = '';
 $tele = '';
+$name_rep= '';
    
 
  if(isset($_POST['contact_message']))
@@ -24,13 +25,9 @@ $tele = '';
   
    }
    if(count($error)=== 0){
-      //hashing the password before saving the data to the database
-      // $user_password = password_hash($user_password, PASSWORD_DEFAULT);
-      //saving the profile picture
-      // $user_picture = $user->save_profile_picture();     
-      // registering a new user and sending the data to the database
+     
       $contact->contact_message($nom, $prenom, $email,$tele,$name_rep);
-      //sending a register confirmation message to the user
+  
       $_SESSION['message'] = "you have created ur order successfuly ";
   }
      
