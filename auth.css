@@ -1,5 +1,5 @@
 
- 
+
 .big_container{
     display: flex;
     
@@ -11,6 +11,7 @@
 .side_picture img{
     width: 100%;
     height: 100vh;
+ 
 }
 .inputs_div{
     flex-basis: 40%;
@@ -34,6 +35,11 @@ input{
     border-radius: 7px;
     font-family: serif;
 }
+.h1 {
+    color: antiquewhite;
+    font-family: serif;
+}
+
 .alert li{
     font-size: 20px;
     list-style: none;
@@ -53,8 +59,5 @@ input{
         width: 90%;
         margin-top: 26px;
     }
-    .side_picture img {
-        width: 100%;
-        height: 53vh;
-    }
+   
 }
